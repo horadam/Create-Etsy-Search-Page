@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<head>
+    <title>Whiskey | Etsy</title>
+    <link rel="shortcut icon" type="image/x-icon" href="icons/Etsy-Icon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div class="topBar">
+        <div class="topBarLeft">
+            <div class="logo">
+                <img src="icons/etsy.svg">
+            </div>
+            <div class="Search">
+                    <form class="example" action="action_page.php">
+                        <input type="text" name="search" placeholder="whiskey">
+                        <button type="submit">Search</button>
+                    </form>
+
+            </div>
+        </div>
+        <div class="topBarRight">
+                <div class="Sell">Sell on Etsy</div>
+                <div class="Reg">Register</div>
+                <div class="SignIn">
+                    <button id="SignIn">Sign in</button>
+                </div>
+                <div class="Discover" id="Discover">
+                    <img src="icons/chest.png">
+                    <div>Discover</div>                   
+                </div>
+                <div class="cart" id="cart">
+                    <img src="icons/cart.svg">
+                    <div>Cart</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="categories">
+        <div href="">Jewelry & Accessories</div>
+        <div>Clothing & Shoes</div>
+        <div>Home & Living</div>
+        <div>Wedding & Party</div>
+        <div>Toys & Entertainemnt</div>
+        <div>Art & Collectibles</div>
+        <div>Craft Supplies</div>
+        <div>Vintage</div>
+        <div id="gifts"><img src="icons/gift-solid.svg">Gifts</div>
+    </div>
+    <div class="buttonWrapper">
+        <div>whiskey decanter</div>
+        <div>whiskey glasses</div>
+        <div>whiskey barrel</div>
+        <div>whiskey stones</div>
+        <div>whiskey shirt</div>
+        <div>whisky</div>
+        <div>scotch</div>
+        <div>whiskey dispenser</div>
+        <div class="yellow">bourbon</div>
+        <div class="yellow">beer</div>
+
+    </div>
+
+    <div id="mainContainer">
+        <div class="filterBar">
+                <div id="specialOffers">
+                    <label for="specialOf">Special offers</label>
+                    <br>
+                    <input type="checkbox" name="specialOf">On sale
+                </div>
+                <div class="allCat">
+                    <ul>All categories
+                        <li>Home & Living</li>
+                        <li>Art & Collectibles</li>
+                        <li>Clothing</li>
+                        <li>Weddings</li>
+                    </ul>
+                    <p>&#43 Show more</p>
+
+                </div>
+                <div class="shipping">
+                    <label>Shipping</label>
+                    <br>
+                    <input type="checkbox" name="FreeSh">Free Shipping
+                    <br>
+                    <input type="checkbox" name="Ready1">Ready to ship in 1 business day
+                    <br>
+                    <input type="checkbox" name="Ready3">Ready to ship within 3 business days
+
+                </div>
+                <div class="material">
+                        <label>Material</label>
+                        <br>
+                        <input type="checkbox" name="ceramic">Ceramic
+                        <br>
+                        <input type="checkbox" name="cork">Cork
+                        <br>
+                        <input type="checkbox" name="fabric">Fabric
+                        <br>
+                        <input type="checkbox" name="glass">Glass
+                        <br>
+                        <input type="checkbox" name="metal">Metal
+                        <p>&#43 Show more</p>
+
+
+                </div>
+                <div class="color">
+                        <label>Color</label>
+                        <br>
+                        <input type="checkbox" name="beige">Beige
+                        <br>
+                        <input type="checkbox" name="black">Black
+                        <br>
+                        <input type="checkbox" name="blue">Blue
+                        <br>
+                        <input type="checkbox" name="bronze">Bronze
+                        <br>
+                        <input type="checkbox" name="brown">Brown
+                        <p>&#43 Show more</p>
+
+                </div>
+                <div class="canBeP">
+                        <label>Can be personalized</label>
+                        <br>
+                        <input type="checkbox" name="persYes">Yes
+                        <br>
+                        <input type="checkbox" name="PersNo">No
+
+                </div>
+                <div class="occasion">
+                        <label>Occasion</label>
+                        <br>
+                        <input type="checkbox" name="anniversary">Anniversary
+                        <br>
+                        <input type="checkbox" name="babyShower">Baby shower
+                        <br>
+                        <input type="checkbox" name="bachelor">Bachelor party
+                        <br>
+                        <input type="checkbox" name="bachelorette">Bacherolette party
+                        <br>
+                        <input type="checkbox" name="birthday">Birthday
+                        <p>&#43 Show more</p>
+
+                </div>
+                <div class="holiday">
+                        <label>Holiday</label>
+                        <br>
+                        <input type="checkbox" name="Christmas">Christmas
+                        <br>
+                        <input type="checkbox" name="CincoDeMayo">Cinco de Mayo
+                        <br>
+                        <input type="checkbox" name="Easter">Easter
+                        <br>
+                        <input type="checkbox" name="fathers">Father's Day
+                        <br>
+                        <input type="checkbox" name="Halloween">Halloween
+                        <p>&#43 Show more</p>
+
+                </div>
+                <div id="shopLocation">
+                    <label for="shopLocation">Shop location</label>
+                    <br>   
+                    <input type="radio" name="location" value="anywhere" checked="checked"> <b>Anywhere</b>
+                    <br>
+                    <input type="radio" name="location" value="US"> Unites States
+                    <br>
+                    <input id="custom" type="radio" name="location" value="custom"> Custom
+                    <br>
+                        <div id class="relative">
+                        <input id="customText" for="custom" type="text" placeholder="Enter location">
+                        <button id="customButton" for="customText" name="customText"></button>
+                    </div>
+
+                </div>
+                <div id="itemType">
+                        <label for="itemType">Item type</label>
+                        <br>   
+                        <input class="bold" type="radio" name="itemType" value="all" checked="checked"> <b>All items</b>
+                        <br>
+                        <input type="radio" name="itemType" value="handmade"> Handmade
+                        <br>
+                        <input type="radio" name="itemType" value="vintage"> Vintage
+
+                </div>
+                <div id="price">
+                        <label for="price">Price(&#36)</label>
+                        <br>
+                        <input type="radio" name="price" value="Any" checked="checked"><b> Any price</b>
+                        <br>
+                        <input type="radio" name="price" value="under50"> Under &#36<span>50</span>
+                        <br>
+                        <input type="radio" name="price" value="50to100"> &#36<span>50</span> to &#36 <span>50</span>
+                        <br>
+                        <input type="radio" name="price" value="100to150"> &#36<span>100</span> to &#36 <span>150</span>
+                        <br>
+                        <input type="radio" name="price" value="over150"> Over &#36<span>150</span>
+                        <br>
+                        <input id="customPrice" type="radio" name="price" value="Custom"> Custom
+                        <br>
+                        <div id class="relative">
+                            <input type="text" id="customPriceLow" for="customPrice" name="customText" placeholder="Low"> to <input id="customPriceHigh" for="customText" name="customText" placeholder="High">
+                            <button id="customButton2" for="customText" name="customText"></button>
+                        </div>  
+
+                </div>
+                <div class="orderingOptions">
+                        <label>Ordering options</label>
+                        <br>
+                        <input type="checkbox" name="acceptsGC">Accepts Etsy gift cards
+                        <br>
+                        <input type="checkbox" name="giftWrap">Can be gift-wrapped
+
+                </div>
+                <div id="shipTo">
+                    <label for="shipTo">Ship to</label>
+                    <br>
+                    <select name="shipTo">
+                        <option value="United States">United States</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Mexico">Mexico</option>
+                    </select>
+
+                </div>
+
+        </div>
+        <div class="resultsContainer">
+            <div id="filter">
+                <div id="categories">
+                    All categories <b>> "whiskey"</b> (68,533 Results)
+                </div>
+                <div id="SortBy">
+                    <label for="SortByDrop">Sort By:</label>
+                    <select id="SortByDrop" name="SortByDrop">
+                        <option>Relevancy</option>
+                        <option>Most Recent</option>
+                        <option>Highest Price</option>
+                        <option>Lowest Price</option>
+                    </select>
+                </div>
+            </div>
+            <div id="mainResultsContainer">
+                
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+<script src="items.js"></script>    
+<script src="main.js"></script>
+</body>
+</html>
